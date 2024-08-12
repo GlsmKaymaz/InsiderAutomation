@@ -3,8 +3,8 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CardPage {
+public class CardPage extends BasePage{
 
-    @FindBy(css = "[id=\"add-to-cart-button\"]")
-    public WebElement addToCard;
+    @FindBy(css = "a-row sc-cart-header sc-compact-bottom")
+    public WebElement shoppingCardTitle;
 }

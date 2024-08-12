@@ -3,13 +3,15 @@ package pages;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
-public abstract class BasePage {
+public abstract class BasePage{
+//burada Page Object Model yapısı kullanılmıştır. Class abstract olarak yapılmıştır.
+//encapculation--getter,setter
+//diğer pageler basePage miras almıştır.
+//driver da-singleton design pattern kullanilmistir.
 
     public BasePage(){
-        PageFactory.initElements(Driver.getDriver(), this)
-        ;
+        PageFactory.initElements(Driver.getDriver(), this);
     }
-
 
     private HomePage homePage;
     private CardPage cardPage;
@@ -34,5 +36,4 @@ public abstract class BasePage {
         }
         return productPage;
     }
-
 }
