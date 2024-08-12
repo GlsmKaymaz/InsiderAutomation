@@ -28,10 +28,10 @@ public class ProductPage extends BasePage{
     @FindBy(css= "a > .a-size-base-plus.a-color-base.a-text-normal")
     public List<WebElement> samsungProducts;
 
-    @FindBy(css = ".a-size-large product-title-word-break")
+    @FindBy(css = ".a-size-large.product-title-word-break")
     public WebElement productTitle;
 
-    @FindBy(css = "a-size-base-plus a-color-base sc-product-title sc-grid-item-product-title")
+    @FindBy(css = "a-size-base-plus.a-color-base.sc-product-title.sc-grid-item-product-title")
     public WebElement cartTitle;
 
 
